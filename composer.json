@@ -1,6 +1,7 @@
 {
     "name": "iadambrown/laravel-helpers",
     "homepage": "https://github.com/iadambrown/laravel-helpers",
+    "description": "A list of personal helper functions for Laravel",
     "license": "MIT",
     "authors": [
         {
@@ -12,6 +13,7 @@
         "php": "^7.1"
     },
     "require-dev": {
+        "roave/security-advisories": "dev-master",
         "fzaninotto/faker": "^1.8",
         "illuminate/support": "5.7.*|5.8.*",
         "mockery/mockery": "dev-master",
@@ -39,5 +41,6 @@
                 "iAdamBrown\\LaravelHelpers\\LaravelHelpersServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "stable"
 }
