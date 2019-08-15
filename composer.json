@@ -1,0 +1,43 @@
+{
+    "name": "iadambrown/laravel-helpers",
+    "homepage": "https://github.com/iadambrown/laravel-helpers",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adam Brown",
+            "email": "iadambrown@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "^1.8",
+        "illuminate/support": "5.7.*|5.8.*",
+        "mockery/mockery": "dev-master",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "iAdamBrown\\LaravelHelpers\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "iAdamBrown\\LaravelHelpers\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "iAdamBrown\\LaravelHelpers\\LaravelHelpersServiceProvider"
+            ]
+        }
+    }
+}
