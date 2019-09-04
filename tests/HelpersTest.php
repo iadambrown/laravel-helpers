@@ -41,4 +41,32 @@ class HelpersTest extends TestCase
     {
         $this->assertTrue(function_exists('user'));
     }
+
+    /** @test */
+    public function lbToKg(): void
+    {
+        $this->assertEquals(0.453592, lbToKg(1, 6));
+        $this->assertEquals(2.26796, lbToKg(5, 5));
+    }
+
+    /** @test */
+    public function kgToLb(): void
+    {
+        $this->assertEquals(2.20462, kgToLb(1, 5));
+        $this->assertEquals(11.0231, kgToLb(5, 4));
+    }
+
+    /** @test */
+    public function mmToIn(): void
+    {
+        $this->assertEquals(0.0393701, mmToIn(1, 7));
+        $this->assertEquals(0.19685, mmToIn(5, 5));
+    }
+
+    /** @test */
+    public function inToMm(): void
+    {
+        $this->assertEquals(25.4, inToMm(1, 1));
+        $this->assertEquals(127, inToMm(5, 0));
+    }
 }
