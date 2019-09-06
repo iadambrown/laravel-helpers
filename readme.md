@@ -5,6 +5,7 @@
 #### Installation:
 
 <p>composer.json</p>
+
 ```
 "require": {
   "iadambrown/laravel-helpers": "dev-master"
