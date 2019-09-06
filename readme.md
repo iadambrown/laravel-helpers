@@ -10,7 +10,7 @@
   "iadambrown/laravel-helpers": "dev-master"
 },
 
-<p>...</p>
+...
 
 "repositories": [
   {
