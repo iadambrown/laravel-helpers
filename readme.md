@@ -1,16 +1,16 @@
 ## Adam's Laravel Helpers
 
-<p>originally modelled after calebporzio/awesome-helpers</p>
+<p>Originally modelled after calebporzio/awesome-helpers</p>
 
 #### Installation:
 
-composer.json
+<p>composer.json</p>
 ```
 "require": {
   "iadambrown/laravel-helpers": "dev-master"
 },
 
-...
+<p>...</p>
 
 "repositories": [
   {
