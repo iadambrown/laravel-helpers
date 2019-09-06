@@ -1,5 +1,7 @@
 ## Adam's Laravel Helpers
 
+<p>originally modelled after calebporzio/awesome-helpers</p>
+
 #### Installation:
 
 composer.json
