@@ -7,7 +7,7 @@ use Illuminate\Support\ServiceProvider;
 
 class LaravelHelpersServiceProvider extends ServiceProvider
 {
-    public function boot()
+    public function boot(): void
     {
         // Load the methods of a mixin class instance into the target class as macro methods.
         Str::mixin(new StrMacros);

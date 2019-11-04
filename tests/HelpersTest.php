@@ -69,4 +69,20 @@ class HelpersTest extends TestCase
         $this->assertEquals(25.4, inToMm(1, 1));
         $this->assertEquals(127, inToMm(5, 0));
     }
+
+    /** @test */
+    public function binarySearch(): void
+    {
+        // Generate an array.
+        $array = range(0, 10);
+
+        // Loop through the array, searching for each value.
+        foreach ($array as $key => $value) {
+            $this->assertSame(binarySearch($array, $value), $value);
+        }
+
+        // Search for values outside of the array.
+        $this->assertNull(binarySearch($array, -1));
+        $this->assertNull(binarySearch($array, 11));
+    }
 }
