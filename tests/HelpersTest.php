@@ -85,4 +85,14 @@ class HelpersTest extends TestCase
         $this->assertNull(binarySearch($array, -1));
         $this->assertNull(binarySearch($array, 11));
     }
+
+    /** @test */
+    public function spacesBetweenCapitals(): void
+    {
+        $stringOne = 'ThisIsATest';
+        $stringTwo = 'thisIsATest';
+
+        $this->assertEquals('This Is A Test', spacesBetweenCapitals($stringOne));
+        $this->assertEquals('this Is A Test', spacesBetweenCapitals($stringTwo));
+    }
 }
