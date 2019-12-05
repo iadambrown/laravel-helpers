@@ -89,10 +89,14 @@ class HelpersTest extends TestCase
     /** @test */
     public function spacesBetweenCapitals(): void
     {
-        $stringOne = 'ThisIsATest';
-        $stringTwo = 'thisIsATest';
+        $this->assertEquals('This Is A Test', spacesBetweenCapitals('ThisIsATest'));
+        $this->assertEquals('this Is A Test', spacesBetweenCapitals('thisIsATest'));
+    }
 
-        $this->assertEquals('This Is A Test', spacesBetweenCapitals($stringOne));
-        $this->assertEquals('this Is A Test', spacesBetweenCapitals($stringTwo));
+    /** @test */
+    public function getInitials(): void
+    {
+        $this->assertEquals('AB', getInitials('Adam Brown'));
+        $this->assertEquals('AB', getInitials('Adam Christopher Brown'));
     }
 }
