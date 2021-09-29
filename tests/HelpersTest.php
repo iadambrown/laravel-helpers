@@ -3,6 +3,7 @@
 namespace iAdamBrown\LaravelHelpers\Tests;
 
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\DB;
 use PHPUnit\Framework\TestCase;
 use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;
 use iAdamBrown\LaravelHelpers\LaravelHelpersServiceProvider;
@@ -98,5 +99,12 @@ class HelpersTest extends TestCase
     {
         $this->assertEquals('AB', getInitials('Adam Brown'));
         $this->assertEquals('AB', getInitials('Adam Christopher Brown'));
+    }
+
+    /** @test */
+    public function queryWithBindings(): void
+    {
+        $this->markTestSkipped('TODO');
+        // @todo: Do I need a sqlite database to test this or something, with a migration to actually call on a table here with DB::table() ?
     }
 }

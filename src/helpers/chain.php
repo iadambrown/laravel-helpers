@@ -1,9 +1,9 @@
 <?php
 
-define('carry', '{carry}');
+const carry = '{carry}';
 
 if (! function_exists('chain')) {
-    function chain($object)
+    function chain($object): callable
     {
         return new class ($object)
         {
