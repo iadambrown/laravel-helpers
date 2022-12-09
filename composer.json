@@ -14,9 +14,9 @@
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest",
-        "fzaninotto/faker": "^1.8",
+        "fakerphp/faker": "^1.9.1",
         "illuminate/support": "^6.0|^7.0|^8.0",
-        "mockery/mockery": "dev-master",
+        "mockery/mockery": "^1.4.4",
         "phpunit/phpunit": "^7.5.15|^8.4|^9.0"
     },
     "autoload": {

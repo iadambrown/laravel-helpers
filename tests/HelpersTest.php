@@ -107,4 +107,13 @@ class HelpersTest extends TestCase
         $this->markTestSkipped('TODO');
         // @todo: Do I need a sqlite database to test this or something, with a migration to actually call on a table here with DB::table() ?
     }
+
+    /** @test */
+    public function changeArrayKeyRecursive(): void
+    {
+        $test = ['homie' => 'Adam', 'dude' => ['what' => 'is up']];
+        $new = changeArrayKeyRecursive($test, ['homie' => 'bro', 'what' => 'sky']);
+        $this->assertArrayHasKey('bro', $new);
+        $this->assertArrayNotHasKey('homie', $new);
+    }
 }

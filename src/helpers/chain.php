@@ -1,5 +1,4 @@
 <?php
-
 const carry = '{carry}';
 
 if (! function_exists('chain')) {
